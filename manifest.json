@@ -1,0 +1,19 @@
+{
+  "name": "Thing",
+  "version": "1.0.0",
+  "description": "Thing.",
+  "manifest_version": 3,
+  "author": "Nathan Tao",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Thing"
+  },
+  "content_scripts": [
+    {
+      "js": ["dist/runs_on_open.js"],
+      "matches": [
+        "*://*/*"
+      ]
+    }
+  ]
+}

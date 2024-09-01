@@ -1,6 +1,6 @@
 const fix = (text: string | null | undefined): string => {
   if (!text) return "";
-  
+
   text.replace(",", "--").split(/[.!?]/);
 
   return "A";

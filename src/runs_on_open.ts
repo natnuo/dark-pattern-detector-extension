@@ -3,25 +3,33 @@ const fix = async (text: string | null | undefined): Promise<string> => {
 
   text.replace(",", "--").split(/[.!?]/);
   
-  const result = await post("/check", {
-    elements: [ { text } ]
-  });
+  // const result = await post("/check", {
+  //   elements: [ { text } ]
+  // });
+
+  // let maxDP = { type: "None", probability: 0.5 };
+  // const dps = result.elements[0].dark_patterns;
+  // for (let i=0;i<dps.length;i++) {
+  //   if (dps[i].probability > maxDP.probability) {
+  //     maxDP = dps[i];
+  //   }
+  // }
 
   const typeToColor: { [dpType: string]: string } = {
-    "": "transparent",
+    "Social Proof": "#f0f",
+    "Misdirection": "#f00",
+    "Urgency": "#af0",
+    "Forced Action": "#00f",
+    "Obstruction": "#0ff",
+    "Sneaking": "#0f0",
+    "Scarcity": "#aa0",
+    "None": "transparent"
   };
 
-  let maxDP = { type: "", probability: 0 };
-  const dps = result.elements[0].dark_patterns;
-  for (let i=0;i<dps.length;i++) {
-    if (dps[i].probability > maxDP.probability) {
-      maxDP = dps[i];
-    }
-  }
+  // const color = typeToColor[maxDP.type];
+  const color = typeToColor[(Math.random() > 0.99) ? "Social Proof" : "None"];
 
-  const color = typeToColor[maxDP.type];
-
-  return `<div style="background-color: ${color}; padding: 1rem; margin: -1rem;">${text}</div>`;
+  return color;
 };
 
 const fixAll = async () => {
@@ -36,8 +44,15 @@ const fixAll = async () => {
     }
     
     await Promise.all(cnlist.map(async (childNode) => {
-      if (childNode.nodeType !== Node.TEXT_NODE) return;
-      childNode.textContent = await fix(childNode.textContent);
+      if (childNode.nodeType !== Node.TEXT_NODE || !childNode.parentElement) return;
+
+      const newColor = await fix(childNode.textContent);
+
+      if (newColor === "transparent") return;
+
+      childNode.parentElement.innerHTML = `<div style="background-color:${newColor};padding:16px;margin:-16px;border-radius:12px;">
+        ${childNode.parentElement.innerHTML}
+      </div>`;
     }));
   
   });

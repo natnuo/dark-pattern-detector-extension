@@ -97,7 +97,7 @@ const fixAll = async () => {
     let st="";
     if (!childNodes.length) return;
     for (let node of childNodes) {
-      if (node.nodeType !== Node.TEXT_NODE || !node.parentElement || !node.textContent || !node.textContent.trim() || !node.textContent.trim().includes(" ")) continue;
+      if (node.nodeType !== Node.TEXT_NODE || !node.parentElement || !node.textContent || !node.textContent.trim() || node.textContent.trim().split(" ").length < 3) continue;
       st+=node.textContent.trim() + " ";
     }
     return [st.trim(), childNodes[0].parentElement];
@@ -182,7 +182,7 @@ setTimeout(() => {
   root?.appendChild(sn);
 
   // initial fixes
-  document.onload = () => { fixAll(); };
+  window.addEventListener("load", fixAll);
   fixAll();
 
   // run fixes again after every change

@@ -1,12 +1,12 @@
 {
-  "name": "Thing",
-  "version": "1.0.0",
-  "description": "Thing.",
+  "name": "Dark Pattern Detector",
+  "version": "0.1.2",
+  "description": "Browse the web confidently by knowing when a site tries to manipulate you.",
   "manifest_version": 3,
-  "author": "Nathan Tao",
+  "author": "Nathan Tao, Ada Langford, Sophia Lin, Rachel Rakower",
   "action": {
     "default_popup": "index.html",
-    "default_title": "Thing"
+    "default_title": "Dark Pattern Detector"
   },
   "content_scripts": [
     {
@@ -15,5 +15,11 @@
         "*://*/*"
       ]
     }
-  ]
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
 }

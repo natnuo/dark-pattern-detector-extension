@@ -84,7 +84,7 @@ const fixAll = async () => {
         if (!childNodes.length)
             return;
         for (let node of childNodes) {
-            if (node.nodeType !== Node.TEXT_NODE || !node.parentElement || !node.textContent || !node.textContent.trim() || !node.textContent.trim().includes(" "))
+            if (node.nodeType !== Node.TEXT_NODE || !node.parentElement || !node.textContent || !node.textContent.trim() || node.textContent.trim().split(" ").length < 3)
                 continue;
             st += node.textContent.trim() + " ";
         }
@@ -163,7 +163,7 @@ setTimeout(() => {
     const root = document.querySelector("html");
     root === null || root === void 0 ? void 0 : root.appendChild(sn);
     // initial fixes
-    document.onload = () => { fixAll(); };
+    window.addEventListener("load", fixAll);
     fixAll();
     // run fixes again after every change
     const onInnerHTMLChange = new MutationObserver(() => { fixAll(); });

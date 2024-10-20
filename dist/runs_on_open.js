@@ -15,6 +15,7 @@ const post = async (action, data) => {
     });
 };
 const fix = async (items) => {
+    var _a;
     const result = await post("check", {
         elements: items.map((text) => { return { text: text.replace(/[^\x00-\x7F]/g, "") }; }),
     });
@@ -24,15 +25,19 @@ const fix = async (items) => {
         "Misdirection": "#f085",
         "Urgency": "#8f05",
         "Forced Action": "#0f85",
-        "Obstruction": "#80f5",
-        "Sneaking": "#08f5",
-        "Scarcity": "#f8f5",
+        // "Obstruction": "#80f5",
+        // "Sneaking": "#08f5",
+        "Scarcity": "#80f5",
         "None": "transparent"
     };
     let colors = [];
     for (let i = 0; i < items.length; i++) {
         let maxDP = { type: "None", probability: 0.5 };
-        const dps = result.elements[i].dark_patterns;
+        const dps = (_a = result.elements[i]) === null || _a === void 0 ? void 0 : _a.dark_patterns;
+        if (!dps) {
+            colors.push(typeToColor[maxDP.type]);
+            continue;
+        }
         for (let j = 0; j < dps.length; j++) {
             if (dps[j].probability > maxDP.probability) {
                 maxDP = dps[j];

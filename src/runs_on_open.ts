@@ -25,9 +25,9 @@ const fix = async (items: string[]): Promise<string[]> => {
     "Misdirection": "#f085",
     "Urgency": "#8f05",
     "Forced Action": "#0f85",
-    "Obstruction": "#80f5",
-    "Sneaking": "#08f5",
-    "Scarcity": "#f8f5",
+    // "Obstruction": "#80f5",
+    // "Sneaking": "#08f5",
+    "Scarcity": "#80f5",
     "None": "transparent"
   };
 
@@ -35,7 +35,10 @@ const fix = async (items: string[]): Promise<string[]> => {
 
   for (let i=0;i<items.length;i++) {
     let maxDP = { type: "None", probability: 0.5 };
-    const dps = result.elements[i].dark_patterns;
+
+    const dps = result.elements[i]?.dark_patterns;
+    if (!dps) { colors.push(typeToColor[maxDP.type]); continue; }
+
     for (let j=0;j<dps.length;j++) {
       if (dps[j].probability > maxDP.probability) {
         maxDP = dps[j];

@@ -24,7 +24,7 @@ const fix = async (items) => {
         "Social Proof": "#f805",
         "Misdirection": "#f085",
         "Urgency": "#8f05",
-        "Forced Action": "#0f85",
+        // "Forced Action": "#0f85",
         // "Obstruction": "#80f5",
         // "Sneaking": "#08f5",
         "Scarcity": "#80f5",

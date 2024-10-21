@@ -1,4 +1,5 @@
 <div align="center">
+  <img src="https://github.com/user-attachments/assets/4a5bfcf0-9df8-46e0-b52d-4aa559bb48cd" alt="" width="500"></img>
   <h1>Dark Pattern Detector</h1>
   <p>Browse the web confidently. Do not let websites manipulate you.</p>
   <sub>Note that this is the FRONTEND EXTENSION element of the Dark Pattern Detector. For the backend code, website code, and LLMs, see <a href="https://github.com/adazing/dark_pattern_detector">https://github.com/adazing/dark_pattern_detector</a></sub>
@@ -72,3 +73,7 @@ The Dark Pattern Detector finds, classifies, and highlights the following dark p
     </ul>
   </li>
 </ol>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/325361ce-6895-4466-8f40-14d07adc96e5" alt="" width="888"></img>
+</div>

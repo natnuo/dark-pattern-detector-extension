@@ -5,76 +5,69 @@
   <sub>Note that this is the FRONTEND EXTENSION element of the Dark Pattern Detector. For the backend code, website code, and LLMs, see <a href="https://github.com/adazing/dark_pattern_detector">https://github.com/adazing/dark_pattern_detector</a></sub>
 </div>
 
-<h2>Functionality</h2>
+<h2>Functionality 🛠️</h2>
 
 The Dark Pattern Detector finds, classifies, and highlights the following dark patterns:
 
-<ol>
-  <li>
-    <b>Misdirection (Confirmshaming, Trick Questions)</b>
-    <ul>
+<b>❌ Misdirection (Confirmshaming, Trick Questions)</b>
+<ul>
+    <li>
+      "No thanks, I prefer paying full price."
+      <ul>
         <li>
-          "No thanks, I prefer paying full price."
-          <ul>
-            <li>
-              Makes declining seem shameful!
-            </li>
-          </ul>
+          Makes declining seem shameful!
         </li>
+      </ul>
+    </li>
+    <li>
+      "By not unchecking this box, you agree to enroll in our exclusive rewards program."
+      <ul>
         <li>
-          "By not unchecking this box, you agree to enroll in our exclusive rewards program."
-          <ul>
-            <li>
-              Strange wording, easy to mix-up logic and accidentally join the exclusive rewards program.
-            </li>
-          </ul>
+          Strange wording, easy to mix-up logic and accidentally join the exclusive rewards program.
         </li>
-    </ul>
-  </li>
-  <li>
-    <b>Social Proof (Activity Messages)</b>
-    <ul>
-        <li>
-          "92 people are viewing this product right now!"
-          <ul>
-            <li>
-              Makes the product seem more popular, but use caution... these "Activity Messages" are very often fake!
-            </li>
-          </ul>
-        </li>
-    </ul>
-  </li>
-  <li>
-    <b>Urgency (Countdown Timers, Limited-Time Messages)</b>
-    <ul>
-        <li>
-          "Limited Time Offer! Christmas Sale! 50 minutes left!"
-          <ul>
-            <li>
-              However, why should "50 minutes left" influence your decision to buy something? "50 minutes left" does not change the quality of the product!
-            </li>
-          </ul>
-        </li>
-        <li>Note that many limited-time messages are often classified, not unintentionally, as social proof dark patterns or vice versa. There is significant overlap between the two categories.</li>
-    </ul>
-  </li>
-  <li>
-    <b>Scarcity (Low-Stock Messages, High-Demand Messages)</b>
-    <ul>
-        <li>
-          "Only 5 left in stock!"
-          <ul>
-            <li>
-              Beware... these "Low-Stock Messages" are very often fake!
-            </li>
-          </ul>
-        </li>
-        <li>Note that, for similar reasons as above, high-demand messages are also often classified, not unintentionally, as social proof dark patterns or vice versa.</li>
-    </ul>
-  </li>
-</ol>
+      </ul>
+    </li>
+</ul>
 
-<h2>Screenshots</h2>
+<b>❌ Social Proof (Activity Messages)</b>
+<ul>
+    <li>
+      "92 people are viewing this product right now!"
+      <ul>
+        <li>
+          Makes the product seem more popular, but use caution... these "Activity Messages" are very often fake!
+        </li>
+      </ul>
+    </li>
+</ul>
+
+<b>❌ Urgency (Countdown Timers, Limited-Time Messages)</b>
+<ul>
+    <li>
+      "Limited Time Offer! Christmas Sale! 50 minutes left!"
+      <ul>
+        <li>
+          However, why should "50 minutes left" influence your decision to buy something? "50 minutes left" does not change the quality of the product!
+        </li>
+      </ul>
+    </li>
+    <li>Note that many limited-time messages are often classified, not unintentionally, as social proof dark patterns or vice versa. There is significant overlap between the two categories.</li>
+</ul>
+
+<b>❌ Scarcity (Low-Stock Messages, High-Demand Messages)</b>
+<ul>
+    <li>
+      "Only 5 left in stock!"
+      <ul>
+        <li>
+          Beware... these "Low-Stock Messages" are very often fake!
+        </li>
+      </ul>
+    </li>
+    <li>Note that, for similar reasons as above, high-demand messages are also often classified, not unintentionally, as social proof dark patterns or vice versa.</li>
+</ul>
+
+<h2>Screenshots 📸</h2>
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/6f5bb1ec-c16a-4ac8-a632-b7a0f347f1ac" alt="" width="33%"></img>
@@ -82,9 +75,9 @@ The Dark Pattern Detector finds, classifies, and highlights the following dark p
   <img src="https://github.com/user-attachments/assets/8b7e2a4f-2ede-4513-ae91-e580705799d4" alt="" width="33%"></img>
 </div>
 
-<h2>Installation</h2>
+<h2>Installation 🔽</h2>
 
-Estimated Time to Complete: 3 minutes.
+Estimated Time to Complete: 3 minutes 🕒.
 
 Download one of the compressed files from the latest release (see <a href="https://github.com/natnuo/dark-pattern-detector-extension/releases/">our releases</a>). We recommend you download the latest version because older versions may be incompatible with the backend server. Save the downloaded file to a location you will not accidentally delete (as doing so would break the extension).
 
@@ -109,17 +102,22 @@ Select "Load unpacked", and when prompted, select the folder that was result of 
 <img src="https://github.com/user-attachments/assets/86e43e66-aebf-4cc4-a5d8-8860bae38efa" alt="" width="37%"></img>
 <img src="https://github.com/user-attachments/assets/6b967228-1641-4f60-9fc9-995f952472c5" alt="" width="60%"></img>
 
-Yay! The extension is now active. You can view what each dark-pattern highlight color represents by clicking on the extension.
+Yay! The extension is now active. You can view what each dark-pattern highlight color represents by clicking on the extension (click on the name of the extension, found in the locations shown in the below images).
 
-Now, each time you visit a page, any dark patterns found should be highlighted in ~7-20 seconds (depending on the size of the page, the purpose of the 7+ second delay is to reduce the load on our servers, which are costly).
+<img src="https://github.com/user-attachments/assets/761f9fa2-a89e-4c63-a2df-d82267f64216" alt="" width="43%"></img>
+<img src="https://github.com/user-attachments/assets/ce3d1e97-d3e3-462c-8e38-5e3268f1c2ff" alt="" width="51%"></img>
+
+Now, each time you visit a page, any dark patterns found should be highlighted and flashing in ~7-20 seconds (the purpose of the 7+ second delay is to reduce the load on our servers, which are costly).
 
 Think smart, and stay safe!
 
 <br/>
 
-Sincerely,
+<i>Sincerely,</i>
 
-The Dark Pattern Detector Team
+<b>The Dark Pattern Detector Team</b> (Nathan, Ada, Sophia, Rachel) 💙
+
+<br/>
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/325361ce-6895-4466-8f40-14d07adc96e5" alt="" width="888"></img>

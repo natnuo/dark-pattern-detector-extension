@@ -109,7 +109,7 @@ Yay! The extension is now active. You can view what each dark-pattern highlight 
 
 Now, each time you visit a page, any dark patterns found should be highlighted and flashing in ~7-20 seconds (the purpose of the 7+ second delay is to reduce the load on our servers, which are costly).
 
-Think smart, and stay safe!
+Think smart, and stay safe! 🫡
 
 <br/>
 

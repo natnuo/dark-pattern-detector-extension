@@ -2,7 +2,7 @@
   <img src="https://github.com/user-attachments/assets/4a5bfcf0-9df8-46e0-b52d-4aa559bb48cd" alt="" width="500"></img>
   <h1>Dark Pattern Detector</h1>
   <p>Browse the web confidently. Do not let websites manipulate you.</p>
-  <sub>Note that this is the FRONTEND EXTENSION element of the Dark Pattern Detector. For the backend code, website code, and LLMs, see <a href="https://github.com/adazing/dark_pattern_detector">https://github.com/adazing/dark_pattern_detector</a></sub>
+  <sub>Note that this is the FRONTEND EXTENSION element of the Dark Pattern Detector. For the backend code, website code, and LLMs, see <a href="https://github.com/adazing/dark_pattern_detector">https://github.com/adazing/dark_pattern_detector</a>.</sub>
 </div>
 
 <h2>Functionality 🛠️</h2>
@@ -109,7 +109,7 @@ Yay! The extension is now active. You can view what each dark-pattern highlight 
 
 Now, each time you visit a page, any dark patterns found should be highlighted and flashing in ~7-20 seconds (the purpose of the 7+ second delay is to reduce the load on our servers, which are costly).
 
-Think smart, and stay safe!
+Think smart, and stay safe! 🫡
 
 <br/>
 

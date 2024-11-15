@@ -9,7 +9,7 @@
 
 The Dark Pattern Detector finds, classifies, and highlights the following dark patterns:
 
-<b>❌ Misdirection (Confirmshaming, Trick Questions)</b>
+<b>✅ Misdirection (Confirmshaming, Trick Questions)</b>
 <ul>
     <li>
       "No thanks, I prefer paying full price."
@@ -29,7 +29,7 @@ The Dark Pattern Detector finds, classifies, and highlights the following dark p
     </li>
 </ul>
 
-<b>❌ Social Proof (Activity Messages)</b>
+<b>✅ Social Proof (Activity Messages)</b>
 <ul>
     <li>
       "92 people are viewing this product right now!"
@@ -41,7 +41,7 @@ The Dark Pattern Detector finds, classifies, and highlights the following dark p
     </li>
 </ul>
 
-<b>❌ Urgency (Countdown Timers, Limited-Time Messages)</b>
+<b>✅ Urgency (Countdown Timers, Limited-Time Messages)</b>
 <ul>
     <li>
       "Limited Time Offer! Christmas Sale! 50 minutes left!"
@@ -54,7 +54,7 @@ The Dark Pattern Detector finds, classifies, and highlights the following dark p
     <li>Note that many limited-time messages are often classified, not unintentionally, as social proof dark patterns or vice versa. There is significant overlap between the two categories.</li>
 </ul>
 
-<b>❌ Scarcity (Low-Stock Messages, High-Demand Messages)</b>
+<b>✅ Scarcity (Low-Stock Messages, High-Demand Messages)</b>
 <ul>
     <li>
       "Only 5 left in stock!"
@@ -76,6 +76,12 @@ The Dark Pattern Detector finds, classifies, and highlights the following dark p
 </div>
 
 <h2>Installation 🔽</h2>
+
+<h3>Option 1: Auto-magic</h3>
+
+We are on the Chrome Web Store! See <a href="https://chromewebstore.google.com/detail/dark-pattern-detector/hflbnjnhcpbgljocmpfgpfgjgmjpjdhj">here</a>!
+
+<h3>Option 2: Maunal</h3>
 
 Estimated Time to Complete: 3 minutes 🕒.
 
